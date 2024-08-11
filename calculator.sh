@@ -51,9 +51,6 @@ do
   		else 
 			echo "$(( $int1 / $int2 ))"
         	fi
-	else  [ "$operation" = "q" ]
-	  	echo "Thank you for using the Bash Calculator" 
-		break;
 	fi
 done
 #Display the result of the operation.
