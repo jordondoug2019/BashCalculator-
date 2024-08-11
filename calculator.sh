@@ -8,7 +8,7 @@ echo "Welcome to the Bash Calculator. Please enter the 1st Number and press retu
 read int1
 
 
-	if ! [[ "$int1" =~ /^[a-zA-Z]+$ ]]
+	if ! [[ "$int1" =~ ^-?[0-9]+$ ]]
 	then
 		echo "Please enter a number"
 		read int1
@@ -19,7 +19,7 @@ echo "Please enter the 2nd Number"
 read int2
 
 
-	if ! [[ "$int2" =~ /^[a-zA-Z]+$ ]]
+	if ! [[ "$int2" =~ ^-?[0-9]+$ ]]
 	then
 		echo "Please enter a number"
 		read int2
